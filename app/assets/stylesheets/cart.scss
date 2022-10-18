@@ -10,3 +10,18 @@
     color: white;
   }
 }
+
+.cart-alert {
+  font-size: 1.7em;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-size: 0.5em;
+    background-color: darkseagreen;
+    border-radius: 5%;
+    padding: 1%;
+  }
+}
