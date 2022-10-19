@@ -10,7 +10,7 @@
   <% if product.quantity < 1 %>
     <div class='soldout'>Sold Out</div>
     <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
-    method: :post, :style => "opacity: 0.5" do %>
+    method: :post, :style => "opacity: 0.5,", disabled: "true" do %>
       <%= fa_icon "shopping-cart", text: 'Add' %> 
       <% end %>
       <% else %>

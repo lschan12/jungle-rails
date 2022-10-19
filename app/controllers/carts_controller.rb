@@ -3,7 +3,7 @@ class CartsController < ApplicationController
   def show
     if cart.empty?
       render(
-        html: "<div class='cart-alert'><p>Oh no! The cart is empty.</p><a href='/'>Continue Shopping</a></div> ".html_safe,
+        html: "<div class='cart-alert'><p>Oh no! The cart is empty.</p><a href='/' class='btn btn-xs btn-success'>Continue Shopping</a></div> ".html_safe,
         layout: 'application'
       )
     end
