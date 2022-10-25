@@ -2,6 +2,16 @@ require 'rails_helper'
 
 RSpec.describe Product, type: :model do
   describe 'Validations' do
+    it 'should save when all four fields are filled' do
+      @category = Category.new({name: 'test category'})
+      @product = @category.products.new({
+        name: "test flower",
+        price: 1000,
+        quantity: 5
+        })
+      @product.save!
+      expect(@product)
+    end
     it 'should have a name present' do
       @category = Category.new({name: 'test category'})
       @product = @category.products.new({
