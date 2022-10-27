@@ -1,6 +1,8 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 6.1 and is used for learning Ruby on Rails by adding new features to an existing application. 
+
+
 
 ## Setup
 
@@ -12,10 +14,6 @@ A mini e-commerce application built with Rails 6.1 for purposes of teaching Rail
 6. Sign up for a Stripe account
 7. Put Stripe (test) keys into appropriate .env vars
 8. Run `bin/rails s -b 0.0.0.0` to start the server
-
-## Database
-
-If Rails is complaining about authentication to the database, uncomment the user and password fields from `config/database.yml` in the development and test sections, and replace if necessary the user and password `development` to an existing database user.
 
 ## Stripe Testing
 
@@ -29,3 +27,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+## Features
+- Sold out badge for products that are sold out
+- Admin Categories where the admin can add new categories in the database
+- User Authentication including a login and register page using bcrypt gem.
+- An order detail page including the details of the order and the email of the customer
+- Admin security where admin pages are only accessible after entering a username and password
+- Empty cart warning message when user tries to check out without any items in the cart
